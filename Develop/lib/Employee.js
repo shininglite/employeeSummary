@@ -25,7 +25,7 @@ class Employee {
 // next two lines create var named employee, 
 // and trigger constructor function and methods in Employee class
 const employee = new Employee("John", 1001, "j@fakemail.com")
-console.log(Employee);
+// console.log(Employee);
 
 //export Employee Class
 module.exports = Employee;
