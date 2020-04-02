@@ -3,22 +3,28 @@ const fs = require("fs");
 
 const templatesDir = path.resolve(__dirname, "../templates");
 
+// A render function to turn an array of employee objects into an html string
 const render = employees => {
+  // html variable set to an empty array to hold employee html strings
   const html = [];
 
+  // filter the employees to get the manager, and map the manager to an array after it is converted to html
   html.push(employees
     .filter(employee => employee.getRole() === "Manager")
     .map(manager => renderManager(manager))
   );
+  // filter the employees to get the engineer(s), and map the engineer(s) to an array after it is converted to html and then join them to a string with no spaceing
   html.push(employees
     .filter(employee => employee.getRole() === "Engineer")
-    .map(engineer => renderEngineer(engineer))
+    .map(engineer => renderEngineer(engineer)).join("")
   );
+  // filter the employees to get the intern(s), and map the intern(s) to an array after it is converted to html and then join them to a string with no spaceing
   html.push(employees
     .filter(employee => employee.getRole() === "Intern")
-    .map(intern => renderIntern(intern))
+    .map(intern => renderIntern(intern)).join("")
   );
 
+  // return the html array after it is joined to a string with no spacing and converted with the renderMain function
   return renderMain(html.join(""));
 
 };

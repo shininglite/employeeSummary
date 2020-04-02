@@ -1,31 +1,28 @@
-// TODO: Write code to define and export the Employee class
-
-//create Employee class
+// Create employee class for the manager, intern and engineer will extend from
 class Employee {
-  // constructor function takes three parameters: name, id, email
-  constructor (name, id, email) {
-  this.name = name;
-  this.id = id;
-  this.email = email;
+  // Constructor has three fields, name, id, email
+  // Set key/value pairs
+  constructor(name, id, email){
+      this.name = name;
+      this.id = id;
+      this.email = email
   }
-  getName() {
-    return this.name;
+  // Function to return the name
+  getName(){
+      return this.name;
   }
-  getId() {
-    return this.id;
+  // Function to return the id
+  getId(){
+      return this.id;
   }
-  getEmail() {
-    return this.email;
+  // Function to return the email
+  getEmail(){
+      return this.email;
   }
-  getRole() {
-    return "Employee";
+  // Function to return 'Employee
+  getRole(){
+      return 'Employee';
   }
 }
 
-// next two lines create var named employee, 
-// and trigger constructor function and methods in Employee class
-const employee = new Employee("John", 1001, "j@fakemail.com")
-// console.log(Employee);
-
-//export Employee Class
 module.exports = Employee;
