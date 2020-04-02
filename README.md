@@ -1,17 +1,32 @@
 # Team Profile Generator
 
 ## Description
-This application generates a web page of a company or project team. The web page that is generated displays an attractive card for each of three team member types: Manager, Engineer, and Intern, with relevant contact information such as their name, id number and email address. 
+This application generates a web page of a company or project team. 
+The web page that is generated displays an attractive card for each of three team member types: 
+
+- Manager 
+
+- Engineer
+
+- Intern 
+
+with relevant contact information such as their name, id number and email address. 
 
 Other information presented depends on their title: 
+
 - Manager includes an office number 
+
 - Engineer includes a github name 
+
 - Intern includes a school name
 
-The application will builds a team with one manager and as many engineers and interns as you want.
+The application builds a team with one manager and as many engineers and interns as you want.
 
 ## Development
 This application was built using node.js, which is server-side JavaScript. It uses Bootstrap css framework and classes.
+
+## Highlights
+The application was built completely on the server side ("back-end") without using client side ("front-end") tools.
 
 ## Usage
 To use this application:
@@ -37,12 +52,16 @@ This application is fully functional but can be developed further.
 
 ### Possible improvements include: 
 - checking input for unique IDs, so that new team members would not have the same ID as an existing member
+
 - verifying input to require correctly entered email addresses, and not allowing numbers or special characters in the name field
+
 - extending application to allow for custom team member types, and to allow removal of existing team member types
 
 ## Developers
-Maxwell Hankner
-Tom van Deusen
-Yeng Vang
+- Maxwell Hankner
+
+- Tom van Deusen
+
+- Yeng Vang
 
 ### Thank you for checking out this project!
